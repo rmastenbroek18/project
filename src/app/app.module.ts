@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { IntlModule } from '@progress/kendo-angular-intl';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { KandidaatFormComponent } from './kandidaat-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KandidaatFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+<!--{{diagnostic}}-->
+<div class="container">
+    <h1>Kandidaat Formulier</h1>
+    <form #kandidaatForm="ngForm" (ngSubmit)="onSubmit(kandidaatForm.value)">
+        <div class="volledigenaam">
+            <label for="voornaam">voornaam:</label>
+            <input type="text" class="form-control" id="voornaam" 
+            name="voornaam" ngModel>
+            <label for="achternaam">achternaam:</label>
+            <input type="text" class="form-control" id="achternaam"
+            name="achternaam" ngModel>                    
+        </div>
+        <div class="adres">
+            <label for="straatnaam">straatnaam:</label>
+            <input type="text" class="form-control" id="straatnaam"
+            name="straatnaam" ngModel>  
+            <label for="huisnummer">huisnummer:</label>
+            <input type="text" class="form-control" id="huisnummer"
+            name="huisnummer" ngModel>
+            <label for="toevoeging">toevoeging:</label>
+            <input type="text" class="form-control" id="toevoeging"
+            name="toevoeging" ngModel> 
+            <label for="postcode">postcode:</label>
+            <input type="text" class="form-control" id="postcode"
+            name="postcode" ngModel>
+            <label for="plaats">plaats:</label>
+            <input type="text" class="form-control" id="plaats"
+            name="plaats" ngModel>                                     
+        </div> 
+        <div class="telefoongegevens">
+            <label for="telefoon">telefoon:</label>
+            <input type="text" class="form-control" id="telefoon"
+            name="telefoon" ngModel>
+            <label for="mobiel">mobiel:</label>
+            <input type="text" class="form-control" id="mobiel"
+            name="mobiel" ngModel>                        
+        </div>
+        <div class="form-group">
+            <label for="email">email:</label>
+            <input type="text" class="form-control" id="email"
+            name="email" ngModel>            
+        </div> 
+        <div class="form-group">
+            <label for="geboortedatum">geboortedatum:</label>
+            <input type="date" class="form-control" id="geboortedatum"
+            name="geboortedatum" ngModel>
+        </div> 
+        <div class="form-group">
+            <label for="bankrekeningnummer">bankrekeningnummer:</label>
+            <input type="text" class="form-control" id="bankrekeningnummer"
+            name="bankrekeningnummer" ngModel>
+        </div>
+        <div class="idgegevens">
+            <label for="bsn">bsn:</label>
+            <input type="text" class="form-control" id="bsn"
+            name="bsn" ngModel>   
+            <label for="vervaldatumid">vervaldatumid:</label>
+            <input type="date" class="form-control" id="vervaldatumid"
+            name="vervaldatum" ngModel>                     
+        </div>                                                                                                                
+        <button type="submit" class="btn btn-default">Versturen</button>
+    </form>
+    <p> TEST  </p>
+    <p> TEST  </p>
+</div>
