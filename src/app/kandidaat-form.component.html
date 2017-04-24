@@ -9,7 +9,6 @@
   webshims.polyfill('forms forms-ext');
 </script>
 
-<input type="date" />
 <div class="container">
     <h1>Kandidaat Formulier</h1>
     <form #kandidaatForm="ngForm" (ngSubmit)="onSubmit(kandidaatForm.value)">
@@ -53,8 +52,7 @@
         </div> 
         <div class="form-group">
             <label for="geboortedatum">geboortedatum:</label>
-            <input type="date" class="form-control" id="geboortedatum"
-            name="geboortedatum" ngModel>
+            <input type="date" id="geboortedatum" name="geboortedatum" />
         </div> 
         <div class="form-group">
             <label for="bankrekeningnummer">bankrekeningnummer:</label>
@@ -66,8 +64,7 @@
             <input type="text" class="form-control" id="bsn"
             name="bsn" ngModel>   
             <label for="vervaldatumid">vervaldatumid:</label>
-            <input type="date" class="form-control" id="vervaldatumid"
-            name="vervaldatum" ngModel>                     
+            <input type="date" id="vervaldatumid" name="vervaldatumid" />                     
         </div>                                                                                                                
         <button type="submit" class="btn btn-default">Versturen</button>
     </form>
